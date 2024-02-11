@@ -13,10 +13,6 @@ import controlador.Strategy.DescuentoPorPrecioStrategy;
 import controlador.Strategy.PrecioStrategy;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author LENOVO
- */
 public class DescuentosPago extends javax.swing.JFrame {
 
     /**
