@@ -117,7 +117,7 @@ public class Login extends javax.swing.JFrame {
         btnSalir.setBackground(new java.awt.Color(102, 0, 0));
         btnSalir.setFont(new java.awt.Font("Roboto Medium", 3, 28)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(102, 0, 0));
-        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\back.png")); // NOI18N
+        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones_Grupal\\Salones_Grupal_Final\\src\\main\\java\\vista\\recursos\\imagenesLogin\\back.png")); // NOI18N
         btnSalir.setActionCommand("Registrarse");
         btnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 0, 0), new java.awt.Color(102, 0, 0), new java.awt.Color(102, 0, 0), new java.awt.Color(102, 0, 0)));
         btnSalir.setBorderPainted(false);
@@ -133,7 +133,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\angelesNegro1.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones_Grupal\\Salones_Grupal_Final\\src\\main\\java\\vista\\recursos\\imagenesLogin\\angelesNegro1.png")); // NOI18N
 
         Entrar1.setBackground(new java.awt.Color(51, 0, 0));
         Entrar1.setFont(new java.awt.Font("Roboto Medium", 3, 28)); // NOI18N

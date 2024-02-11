@@ -154,7 +154,7 @@ public class Register extends javax.swing.JFrame {
         btnSiguiente.setBackground(new java.awt.Color(102, 0, 0));
         btnSiguiente.setFont(new java.awt.Font("Roboto Medium", 3, 28)); // NOI18N
         btnSiguiente.setForeground(new java.awt.Color(255, 255, 255));
-        btnSiguiente.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\back.png")); // NOI18N
+        btnSiguiente.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones_Grupal\\Salones_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\back.png")); // NOI18N
         btnSiguiente.setActionCommand("btnSiguiente");
         btnSiguiente.setAlignmentY(0.0F);
         btnSiguiente.setAutoscrolls(true);
@@ -170,7 +170,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\Logo.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones_Grupal\\Salones_Grupal_Final\\src\\main\\java\\vista\\recursos\\imagenesLogin\\Logo.jpg")); // NOI18N
 
         jButton1.setBackground(new java.awt.Color(153, 0, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N

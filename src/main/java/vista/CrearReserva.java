@@ -145,7 +145,7 @@ public class CrearReserva extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\salonModerno.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones_Grupal\\Salones_Grupal_Final\\src\\main\\java\\vista\\recursos\\imagenesLogin\\salonModerno.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -149,7 +149,7 @@ public class Principal extends javax.swing.JFrame {
                                 .addGap(65, 65, 65)
                                 .addComponent(jButton7))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(226, 226, 226)
+                        .addGap(300, 300, 300)
                         .addComponent(jButton5)))
                 .addContainerGap(195, Short.MAX_VALUE))
         );
