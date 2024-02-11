@@ -61,7 +61,7 @@ public class Salones extends javax.swing.JFrame {
                 {null, null, null, null, null}
             },
             new String [] {
-                "ID", "Nombre", "Direccion", "Horario Atencion", "Tipo Garage"
+                "ID", "Nombre", "Direccion", "Horario Atencion", "Ubicacion"
             }
         ) {
             Class[] types = new Class [] {
@@ -193,7 +193,7 @@ public class Salones extends javax.swing.JFrame {
         	salon.getNombreSalon(),
         	salon.getDireccionSalon(),
             salon.getHorarioAtencion(),
-            salon.getTipoEspacio()
+            salon.getUbicacion()
         });
     }
 

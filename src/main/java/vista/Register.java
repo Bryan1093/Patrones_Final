@@ -60,7 +60,7 @@ public class Register extends javax.swing.JFrame {
 
         panelAzul.setBackground(new java.awt.Color(255, 255, 255));
 
-        panelDorado.setBackground(new java.awt.Color(102, 0, 0));
+        panelDorado.setBackground(new java.awt.Color(116, 33, 122));
 
         nombre.setFont(new java.awt.Font("Roboto Black", 3, 15)); // NOI18N
         nombre.setText("NOMBRE");
@@ -90,7 +90,7 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        back.setBackground(new java.awt.Color(102, 0, 0));
+        back.setBackground(new java.awt.Color(112, 109, 112));
         back.setFont(new java.awt.Font("Roboto Medium", 3, 28)); // NOI18N
         back.setForeground(new java.awt.Color(255, 198, 0));
         back.setBorder(null);
@@ -100,9 +100,9 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        Inombre.setBackground(new java.awt.Color(102, 0, 0));
+        Inombre.setBackground(new java.awt.Color(112, 109, 112));
         Inombre.setFont(new java.awt.Font("Roboto Light", 2, 16)); // NOI18N
-        Inombre.setForeground(new java.awt.Color(153, 153, 153));
+        Inombre.setForeground(new java.awt.Color(0,0,0));
         Inombre.setText("Ingrese su nombre completo");
         Inombre.setBorder(null);
         Inombre.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -116,9 +116,9 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        Icorreo.setBackground(new java.awt.Color(102, 0, 0));
+        Icorreo.setBackground(new java.awt.Color(112, 109, 112));
         Icorreo.setFont(new java.awt.Font("Roboto Light", 2, 16)); // NOI18N
-        Icorreo.setForeground(new java.awt.Color(153, 153, 153));
+        Icorreo.setForeground(new java.awt.Color(0,0,0));
         Icorreo.setText("Ingrese su correo");
         Icorreo.setBorder(null);
         Icorreo.addActionListener(new java.awt.event.ActionListener() {
@@ -127,9 +127,9 @@ public class Register extends javax.swing.JFrame {
             }
         });
 
-        Itelefono.setBackground(new java.awt.Color(102, 0, 0));
+        Itelefono.setBackground(new java.awt.Color(112, 109, 112));
         Itelefono.setFont(new java.awt.Font("Roboto Light", 2, 16)); // NOI18N
-        Itelefono.setForeground(new java.awt.Color(153, 153, 153));
+        Itelefono.setForeground(new java.awt.Color(0,0,0));
         Itelefono.setText("Ingrese su numero de telefono");
         Itelefono.setBorder(null);
 
@@ -145,9 +145,9 @@ public class Register extends javax.swing.JFrame {
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
 
-        Inpass.setBackground(new java.awt.Color(102, 0, 0));
+        Inpass.setBackground(new java.awt.Color(112, 109, 112));
         Inpass.setFont(new java.awt.Font("Roboto Light", 2, 16)); // NOI18N
-        Inpass.setForeground(new java.awt.Color(153, 153, 153));
+        Inpass.setForeground(new java.awt.Color(0, 0, 0));
         Inpass.setText("****************");
         Inpass.setBorder(null);
 
@@ -218,7 +218,7 @@ public class Register extends javax.swing.JFrame {
                             .addComponent(btnSiguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addContainerGap()))
                     .addComponent(contraseña)
-                    .addComponent(Inpass, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Inpass, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 261, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nombre)
                     .addComponent(Inombre, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)

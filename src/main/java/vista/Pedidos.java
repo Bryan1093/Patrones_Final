@@ -48,8 +48,7 @@ private EstadoPedido estadoPedido = new EstadoPedido();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
-
+        jPanel1.setBackground(new java.awt.Color(136, 117, 142));
         jTable1.setBackground(new java.awt.Color(153, 0, 204));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -72,7 +71,7 @@ private EstadoPedido estadoPedido = new EstadoPedido();
         });
         jScrollPane1.setViewportView(jTable1);
 
-        botonPedido.setBackground(new java.awt.Color(51, 255, 0));
+        botonPedido.setBackground(new java.awt.Color(112, 102, 108));
         botonPedido.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botonPedido.setText("Realizar el Pedido");
         botonPedido.addActionListener(new java.awt.event.ActionListener() {

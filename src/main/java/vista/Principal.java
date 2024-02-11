@@ -40,10 +40,9 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
-
-        jPanel1.setBackground(new java.awt.Color(102, 0, 0));
-        jPanel1.setForeground(new java.awt.Color(102, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(65, 199, 199));
+        jPanel1.setBackground(new java.awt.Color(65, 199, 199));
+        jPanel1.setForeground(new java.awt.Color(65, 199, 199));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\download.jpg")); // NOI18N
 
@@ -64,7 +63,7 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jButton2.setBackground(new java.awt.Color(102, 255, 102));
+        jButton2.setBackground(new java.awt.Color(245,35,130));
         jButton2.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jButton2.setText("Hacer un Pedido");
         jButton2.setActionCommand("botonPedidos");
@@ -74,9 +73,9 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(204, 51, 0));
+        jButton3.setBackground(new java.awt.Color(245,35,130));
         jButton3.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
-        jButton3.setText("Ver TipoSalones");
+        jButton3.setText("Ver Tipo Salones");
         jButton3.setActionCommand("botonMenus");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +83,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(255, 51, 51));
+        jButton4.setBackground(new java.awt.Color(245,35,130));
         jButton4.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jButton4.setText("Ver mis Reservas");
         jButton4.setActionCommand("botonReservas");
@@ -94,7 +93,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(0, 204, 204));
+        jButton5.setBackground(new java.awt.Color(245, 124, 35));
         jButton5.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jButton5.setText("Editar Perfil");
         jButton5.setToolTipText("");
@@ -105,7 +104,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(0, 51, 204));
+        jButton6.setBackground(new java.awt.Color(106, 104, 104));
         jButton6.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jButton6.setText("Cerrar Sesion");
         jButton6.setToolTipText("");
@@ -117,7 +116,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jButton7.setBackground(new java.awt.Color(153, 0, 0));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Algerian", 1, 18)); // NOI18N
         jButton7.setText("Reservar un Salon");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,10 +140,10 @@ public class Principal extends javax.swing.JFrame {
                                     .addComponent(jButton4)
                                     .addComponent(jButton2)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(122, 122, 122)
+                                .addGap(110, 110, 110)
                                 .addComponent(jButton6))
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(129, 129, 129)
+                                .addGap(110, 110, 110)
                                 .addComponent(jButton3))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(65, 65, 65)

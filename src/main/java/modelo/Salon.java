@@ -13,19 +13,19 @@ public class Salon {
     private String nombreSalon;
     private String direccionSalon;
     private String horarioAtencion;
-    private String tipoEspacio;
-    private String otraCaracteristica;
+    private String capacidad;
+    private String ubicacion;
 
     public Salon() {
     }
 
-    public Salon(int idSalon, String nombreSalon, String direccionSalon, String horarioAtencion, String tipoEspacio, String otraCaracteristica) {
+    public Salon(int idSalon, String nombreSalon, String direccionSalon, String horarioAtencion, String capacidad, String ubicacion) {
         this.idSalon = idSalon;
         this.nombreSalon = nombreSalon;
         this.direccionSalon = direccionSalon;
         this.horarioAtencion = horarioAtencion;
-        this.tipoEspacio = tipoEspacio;
-        this.otraCaracteristica = otraCaracteristica;
+        this.capacidad = capacidad;
+        this.ubicacion = ubicacion;
     }
 
 
@@ -63,25 +63,25 @@ public class Salon {
 		this.direccionSalon = direccionSalon;
 	}
 
-	public String getTipoEspacio() {
-		return tipoEspacio;
+	public String getCapacidad() {
+		return capacidad;
 	}
 
-	public void setTipoEspacio(String tipoEspacio) {
-		this.tipoEspacio = tipoEspacio;
+	public void setCapacidad(String tipoEspacio) {
+		this.capacidad = tipoEspacio;
 	}
 
-	public String getOtraCaracteristica() {
-        return otraCaracteristica;
+	public String getUbicacion() {
+        return ubicacion;
     }
 
-    public void setOtraCaracteristica(String otraCaracteristica) {
-        this.otraCaracteristica = otraCaracteristica;
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
     @Override
     public String toString() {
-        return "Salon[ " + "Id: " + idSalon + ", Nombre: " + nombreSalon + ", Direccion: " + direccionSalon + ", Horario: " + horarioAtencion + ", Tipo Cocina: " + tipoEspacio + ", Mas informacion: " + otraCaracteristica + " ]";
+        return "Salon[ " + "Id: " + idSalon + ", Nombre: " + nombreSalon + ", Direccion: " + direccionSalon + ", Horario: " + horarioAtencion + ", Capacidad: " + capacidad + ", Ubicacion: " + ubicacion + " ]";
     }
     
     

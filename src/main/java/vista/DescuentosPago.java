@@ -50,7 +50,7 @@ public class DescuentosPago extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setForeground(new java.awt.Color(255, 102, 102));
 
-        botonEstudiante.setBackground(new java.awt.Color(102, 255, 204));
+        botonEstudiante.setBackground(new java.awt.Color(255, 51, 51));
         botonEstudiante.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botonEstudiante.setText("Descuento Quince años");
         botonEstudiante.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +59,7 @@ public class DescuentosPago extends javax.swing.JFrame {
             }
         });
 
-        botonCumpleaños.setBackground(new java.awt.Color(153, 255, 153));
+        botonCumpleaños.setBackground(new java.awt.Color(255, 51, 51));
         botonCumpleaños.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botonCumpleaños.setText("Descuento Graduación");
         botonCumpleaños.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +68,7 @@ public class DescuentosPago extends javax.swing.JFrame {
             }
         });
 
-        botonBodas.setBackground(new java.awt.Color(51, 51, 255));
+        botonBodas.setBackground(new java.awt.Color(255, 51, 51));
         botonBodas.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         botonBodas.setText("Descuento Bodas");
         botonBodas.addActionListener(new java.awt.event.ActionListener() {

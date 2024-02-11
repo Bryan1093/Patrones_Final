@@ -75,7 +75,7 @@ public class Crud {
 
 		try {
 			connection.setAutoCommit(false);
-			sql = "INSERT INTO tipoSalones(id_tiposalon, nombre, descripcion, precio, otras_caracteristicas)"
+			sql = "INSERT INTO tipoSalones(id_salon, nombre, descripcion, precio, otras_caracteristicas)"
 					+ "VALUES(?,?,?,?,?)";
 			sentencia = connection.prepareStatement(sql);
                         
@@ -192,14 +192,14 @@ public class Crud {
 
 		try {
 			connection.setAutoCommit(false);
-			sql = "INSERT INTO salones(nombre, direccion, horario_atencion, tipo_garage otras_caracteristicas)"
+			sql = "INSERT INTO salones(nombre, direccion, horario_atencion, capacidad_maxima, ubicacion)"
 					+ "VALUES(?,?,?,?,?)";
 			sentencia = connection.prepareStatement(sql);
                         sentencia.setString(1, salon.getNombreSalon());
                         sentencia.setString(2, salon.getDireccionSalon());
                         sentencia.setString(3, salon.getHorarioAtencion());
-                        sentencia.setString(4, salon.getTipoEspacio());
-                        sentencia.setString(5, salon.getOtraCaracteristica());
+                        sentencia.setString(4, salon.getCapacidad());
+                        sentencia.setString(5, salon.getUbicacion());
                   
 			estadoOP = sentencia.executeUpdate() > 0;
 			connection.commit();
@@ -332,7 +332,7 @@ public class Crud {
                                 pedido.setIdPedido(resultados.getInt(1));
                                 pedido.setIdCliente(resultados.getInt(2));
                                 pedido.setIdSalon(resultados.getInt(3));
-                                pedido.setFechaPedido(resultados.getObject(4,LocalDate.class));
+                                pedido.setFechaPedido(resultados.getObject(4,LocalDate.class));	
                                 pedido.setHoraPedido(resultados.getObject(5,LocalTime.class));
                                 pedido.setTotalPedido(resultados.getDouble(6));
                                 pedido.setEstadoPedido(resultados.getString(7));
@@ -402,8 +402,8 @@ public class Crud {
 				salon.setNombreSalon(resultados.getString(2));
 				salon.setDireccionSalon(resultados.getString(3));
 				salon.setHorarioAtencion(resultados.getString(4));
-				salon.setTipoEspacio(resultados.getString(5));
-				salon.setOtraCaracteristica(resultados.getString(6));
+				salon.setCapacidad(resultados.getString(5));
+				salon.setUbicacion(resultados.getString(6));
                                 
 			}
 
@@ -617,8 +617,8 @@ public class Crud {
 				salon.setNombreSalon(resultado.getString(2));
 				salon.setDireccionSalon(resultado.getString(3));
 				salon.setHorarioAtencion(resultado.getString(4));
-                                salon.setTipoEspacio(resultado.getString(5));
-                                salon.setOtraCaracteristica(resultado.getString(6));
+                                salon.setCapacidad(resultado.getString(5));
+                                salon.setUbicacion(resultado.getString(6));
                                 
                                 listaSalones.add(salon);
 				
@@ -792,7 +792,7 @@ public class Crud {
 		
 		try {
 			connection.setAutoCommit(false);
-			sql = "UPDATE reservas SET id_cliente =?, id_restaurante =?, fecha =?, hora =?, numero_personas =?, observaciones =? WHERE id_cliente =?";
+			sql = "UPDATE reservas SET id_cliente =?, id_salon =?, fecha =?, hora =?, numero_personas =?, observaciones =? WHERE id_cliente =?";
 			sentencia = connection.prepareStatement(sql);
 			
                         sentencia.setInt(1, reserva.getIdCliente());
@@ -824,14 +824,14 @@ public class Crud {
 		
 		try {
 			connection.setAutoCommit(false);
-			sql = "UPDATE salones SET nombre =?, direccion =?, horario_atencion =?, tipo_cocina =?, otras_caracteristicas =? WHERE nombre =?";
+			sql = "UPDATE salones SET nombre =?, direccion =?, horario_atencion =?, capacidad_maxima =?, ubicacion =? WHERE nombre =?";
 			sentencia = connection.prepareStatement(sql);
 			
                         sentencia.setString(1, salon.getNombreSalon());
                         sentencia.setString(2, salon.getDireccionSalon());
                         sentencia.setString(3, salon.getHorarioAtencion());
-                        sentencia.setString(4, salon.getTipoEspacio());
-                        sentencia.setString(5, salon.getOtraCaracteristica());
+                        sentencia.setString(4, salon.getCapacidad());
+                        sentencia.setString(5, salon.getUbicacion());
                         sentencia.setString(6, nombre);
 		} catch (SQLException e) {
 			connection.rollback();
@@ -875,7 +875,7 @@ public boolean eliminarUsuario(int id) throws SQLException {
 		return estadoOP;
 	}
 	//------------------------------------------------
-	//-------------MENUS-------------------------
+	//-------------TIPOSALON-------------------------
 public boolean eliminarTipoSalon(int id_salon) throws SQLException {
 	
 	String sql = null;
@@ -901,7 +901,7 @@ public boolean eliminarTipoSalon(int id_salon) throws SQLException {
 	return estadoOP;
 }
 	//------------------------------------------------
-	//-------------MESAS------------------------------
+	//-------------ESPACIO------------------------------
 public boolean eliminarEspacio(int id_espacio) throws SQLException {
 	
 	String sql = null;
@@ -981,7 +981,7 @@ public boolean eliminarReserva(int id_cliente) throws SQLException {
 	return estadoOP;
 }
 	//------------------------------------------------
-//-------------RESTAURANTES----------------------------
+//-------------SALONES----------------------------
 public boolean eliminarSalon(String nombre) throws SQLException {
 	
 	String sql = null;

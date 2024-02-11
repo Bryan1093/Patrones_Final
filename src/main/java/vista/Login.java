@@ -51,7 +51,7 @@ public class Login extends javax.swing.JFrame {
         bg.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        PanelAzul.setBackground(new java.awt.Color(102, 0, 0));
+        PanelAzul.setBackground(new java.awt.Color(190, 165, 133));
 
         TextPass.setFont(new java.awt.Font("Roboto Black", 2, 15)); // NOI18N
         TextPass.setText("CONTRASEÑA:");
@@ -59,9 +59,9 @@ public class Login extends javax.swing.JFrame {
         TextUser.setFont(new java.awt.Font("Roboto Black", 2, 15)); // NOI18N
         TextUser.setText("USUARIO:");
 
-        Iuser.setBackground(new java.awt.Color(102, 0, 0));
+        Iuser.setBackground(new java.awt.Color(190, 165, 133));
         Iuser.setFont(new java.awt.Font("Roboto Light", 2, 16)); // NOI18N
-        Iuser.setForeground(new java.awt.Color(153, 153, 153));
+        Iuser.setForeground(new java.awt.Color(0, 0, 0));
         Iuser.setText("Ingrese su usuario");
         Iuser.setBorder(null);
         Iuser.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -75,9 +75,9 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        Ipass.setBackground(new java.awt.Color(102, 0, 0));
+        Ipass.setBackground(new java.awt.Color(190, 165, 133));
         Ipass.setFont(new java.awt.Font("Roboto Light", 2, 16)); // NOI18N
-        Ipass.setForeground(new java.awt.Color(153, 153, 153));
+        Ipass.setForeground(new java.awt.Color(0, 0, 0));
         Ipass.setText("Ingrese su contraseña");
         Ipass.setBorder(null);
         Ipass.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -117,7 +117,7 @@ public class Login extends javax.swing.JFrame {
         btnSalir.setBackground(new java.awt.Color(102, 0, 0));
         btnSalir.setFont(new java.awt.Font("Roboto Medium", 3, 28)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(102, 0, 0));
-        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\ bryan\\ OneDrive\\Escritorio\\Gruoal Patrones\\Eventos_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\exit.png")); // NOI18N
+        btnSalir.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\back.png")); // NOI18N
         btnSalir.setActionCommand("Registrarse");
         btnSalir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 0, 0), new java.awt.Color(102, 0, 0), new java.awt.Color(102, 0, 0), new java.awt.Color(102, 0, 0)));
         btnSalir.setBorderPainted(false);
@@ -133,7 +133,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\LogoNR.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\bryan\\OneDrive\\Escritorio\\Salones\\Restaurantes_Grupal\\src\\main\\java\\vista\\recursos\\imagenesLogin\\angelesNegro1.png")); // NOI18N
 
         Entrar1.setBackground(new java.awt.Color(51, 0, 0));
         Entrar1.setFont(new java.awt.Font("Roboto Medium", 3, 28)); // NOI18N
@@ -178,7 +178,7 @@ public class Login extends javax.swing.JFrame {
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                     .addComponent(Iuser, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addGroup(PanelAzulLayout.createSequentialGroup()
-                                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addGap(32, 32, 32))))
                                         .addGap(18, 18, 18))))
                             .addGroup(PanelAzulLayout.createSequentialGroup()
