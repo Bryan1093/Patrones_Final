@@ -595,7 +595,7 @@ public class Crud {
 	}
 	//------------------------------------------------
         //-----------------------SALONES--------------------
-	public List<Salon> obtenerSalones(String tipo_espacio)throws SQLException{
+	public List<Salon> obtenerSalones(String ubicacion)throws SQLException{
 		ResultSet resultado = null;
 		List<Salon> listaSalones = new ArrayList<>(); 
 
@@ -605,9 +605,9 @@ public class Crud {
 
 		try {
 			connection.setAutoCommit(false);
-			sql = "SELECT * FROM salones WHERE tipo_espacio = ? ";
+			sql = "SELECT * FROM salones WHERE ubicacion = ? ";
 			sentencia = connection.prepareStatement(sql);
-                        sentencia.setString(1, tipo_espacio);
+                        sentencia.setString(1, ubicacion);
 			resultado = sentencia.executeQuery();
 
 			while(resultado.next()){

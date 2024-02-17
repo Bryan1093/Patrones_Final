@@ -187,7 +187,7 @@ String numero = jTextField1.getText();
 int numero_personas = Integer.parseInt(numero);
 String observaciones = (String) jComboBox1.getSelectedItem();
 try {
-    reserva.crearReserva(new Reserva(0, id_cliente, id_restaurante, fecha, hora, numero_personas, observaciones));
+    reserva.crearReserva(new Reserva(1, id_cliente, id_restaurante, fecha, hora, numero_personas, observaciones));
     
     JOptionPane.showMessageDialog(null, "Se ha generado su reserva", "Reserva Exitosa", JOptionPane.INFORMATION_MESSAGE);
 } catch (SQLException ex) {
