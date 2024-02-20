@@ -1,11 +1,5 @@
 package controlador.facade;
 
-import modelo.Cliente;
-
-/**
- *
- * @author kevin
- */
 //Desplegamos las opciones de actualizacion y notificacion a los usuarios:
 public class UsuarioFacade {
     UsuarioActualizar actualizar;

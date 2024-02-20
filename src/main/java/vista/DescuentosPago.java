@@ -190,7 +190,7 @@ StringBuilder detalles = new StringBuilder();
 detalles.append("Espacio: ").append(DatosUsuario.getIdEpsacioSeleccionado()).append("\n");
 detalles.append("Cliente: ").append(DatosUsuario.getIdUsuarioSeleccionado()).append("\n");
 
-detalles.append("\nMenús seleccionados:\n");
+detalles.append("\nExtras seleccionados:\n");
 for (TipoSalonSeleccionado tiposalonSeleccionado : DatosUsuario.getTipoSalonSeleccionados()) {
     detalles.append(tiposalonSeleccionado.getNombre()).append(" - $").append(tiposalonSeleccionado.getPrecio()).append("\n");
 }
@@ -211,7 +211,7 @@ StringBuilder detalles = new StringBuilder();
 detalles.append("Espacio: ").append(DatosUsuario.getIdEpsacioSeleccionado()).append("\n");
 detalles.append("Cliente: ").append(DatosUsuario.getIdUsuarioSeleccionado()).append("\n");
 
-detalles.append("\nMenús seleccionados:\n");
+detalles.append("\nExtras seleccionados:\n");
 for (TipoSalonSeleccionado tpSeleccionado : DatosUsuario.getTipoSalonSeleccionados()) {
     detalles.append(tpSeleccionado.getNombre()).append(" - $").append(tpSeleccionado.getPrecio()).append("\n");
 }
@@ -240,7 +240,7 @@ StringBuilder detalles = new StringBuilder();
 detalles.append("Espacio: ").append(DatosUsuario.getIdEpsacioSeleccionado()).append("\n");
 detalles.append("Cliente: ").append(DatosUsuario.getIdUsuarioSeleccionado()).append("\n");
 
-detalles.append("\nMenús seleccionados:\n");
+detalles.append("\nExtras seleccionados:\n");
 for (TipoSalonSeleccionado tpSeleccionado : DatosUsuario.getTipoSalonSeleccionados()) {
     detalles.append(tpSeleccionado.getNombre()).append(" - $").append(tpSeleccionado.getPrecio()).append("\n");
 }
@@ -261,7 +261,7 @@ StringBuilder detalles = new StringBuilder();
 detalles.append("Espacio: ").append(DatosUsuario.getIdEpsacioSeleccionado()).append("\n");
 detalles.append("Cliente: ").append(DatosUsuario.getIdUsuarioSeleccionado()).append("\n");
 
-detalles.append("\nMenús seleccionados:\n");
+detalles.append("\nExtras seleccionados:\n");
 for (TipoSalonSeleccionado tipSalonSeleccionado : DatosUsuario.getTipoSalonSeleccionados()) {
     detalles.append(tipSalonSeleccionado.getNombre()).append(" - $").append(tipSalonSeleccionado.getPrecio()).append("\n");
 }

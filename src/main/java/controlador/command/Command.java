@@ -7,10 +7,6 @@ package controlador.command;
 import java.util.List;
 import modelo.TipoSalon;
 
-/**
- *
- * @author LENOVO
- */
 //Gestionamos las solicitudes (Cola de solicitudes):
 public interface Command {
     List<TipoSalon> execute();

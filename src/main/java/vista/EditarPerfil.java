@@ -8,10 +8,6 @@ import controlador.facade.UsuarioFacade;
 import controlador.proxy.ProxyUsuario;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Joel
- */
 public class EditarPerfil extends javax.swing.JFrame {
 
     /**

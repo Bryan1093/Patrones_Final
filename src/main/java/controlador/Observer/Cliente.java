@@ -4,10 +4,6 @@
  */
 package controlador.Observer;
 
-/**
- *
- * @author Joel
- */
 import javax.swing.JOptionPane;
 //Cliente para notificar como un Observer:
 public class Cliente implements Observer {

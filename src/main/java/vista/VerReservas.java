@@ -14,10 +14,6 @@ import javax.swing.table.DefaultTableModel;
 import modelo.Crud;
 import modelo.Reserva;
 
-/**
- *
- * @author LENOVO
- */
 public class VerReservas extends javax.swing.JFrame {
 
     /**

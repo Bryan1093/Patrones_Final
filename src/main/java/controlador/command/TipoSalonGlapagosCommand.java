@@ -9,12 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import modelo.Crud;
 import modelo.TipoSalon;
-
-/**
- *
- * @author LENOVO
- */
-//Desplegamos la solicitud de busquedas por TipoSalon (Almuerzo):
 public class TipoSalonGlapagosCommand implements Command{
     private int id_salon;
     private String nombre;

@@ -8,21 +8,12 @@ import controlador.AuxiliarDatos.DatosUsuario;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
+
 import modelo.Crud;
 import modelo.Salon;
-import modelo.TipoSalon;
 
-/**
- *
- * @author LENOVO
- */
 public class Salones extends javax.swing.JFrame {
 
     /**
@@ -46,7 +37,7 @@ public class Salones extends javax.swing.JFrame {
         jTable2 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jcbComida = new javax.swing.JComboBox<>();
+        jcbUbicacion = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -108,8 +99,8 @@ public class Salones extends javax.swing.JFrame {
             }
         });
 
-        jcbComida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cuenca", "Galápagos", "Oro" }));
-        jcbComida.addActionListener(new java.awt.event.ActionListener() {
+        jcbUbicacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cuenca", "Galápagos", "Oro" }));
+        jcbUbicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcbComidaActionPerformed(evt);
             }
@@ -126,7 +117,7 @@ public class Salones extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jcbComida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jcbUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
@@ -145,7 +136,7 @@ public class Salones extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jcbComida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jcbUbicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2)
                         .addGap(209, 209, 209))))
@@ -173,7 +164,7 @@ public class Salones extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     		actualizarIdSalonSeleccionado();
-    String tipoCocinaSeleccionada = (String) jcbComida.getSelectedItem();
+    String ubicacion = (String) jcbUbicacion.getSelectedItem();
 
     DefaultTableModel miTableModel = (DefaultTableModel) jTable2.getModel();
     miTableModel.setRowCount(0); 
@@ -182,7 +173,7 @@ public class Salones extends javax.swing.JFrame {
     try {
         Crud mostrar = new Crud();
         
-        listaSalones = mostrar.obtenerSalones(tipoCocinaSeleccionada);
+        listaSalones = mostrar.obtenerSalones(ubicacion);
     } catch (SQLException e) {
         e.printStackTrace();
     }
@@ -202,8 +193,8 @@ public class Salones extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        Espacios mesa = new Espacios();
-        mesa.setVisible(true);
+        Espacios espacio = new Espacios();
+        espacio.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -278,6 +269,6 @@ private void botonSiguienteActionPerformed(java.awt.event.ActionEvent evt) {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
-    private javax.swing.JComboBox<String> jcbComida;
+    private javax.swing.JComboBox<String> jcbUbicacion;
     // End of variables declaration//GEN-END:variables
 }

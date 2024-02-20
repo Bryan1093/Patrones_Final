@@ -4,11 +4,7 @@
  */
 package controlador.AuxiliarDatos;
 
-/**
- *
- * @author LENOVO
- */
-//Construimos el TipoSalon por nombre y precio:
+//Construimos el TipoSalon
 public class TipoSalonSeleccionado {
     private String nombre;
     private double precio;

@@ -14,10 +14,6 @@ import javax.swing.JOptionPane;
 import modelo.Crud;
 import modelo.Reserva;
 
-/**
- *
- * @author LENOVO
- */
 public class CrearReserva extends javax.swing.JFrame {
 
     /**
@@ -180,14 +176,14 @@ public class CrearReserva extends javax.swing.JFrame {
         
 Crud reserva = new Crud();
 int id_cliente = DatosUsuario.getIdUsuarioSeleccionado();
-int id_restaurante = DatosUsuario.getIdSalonSeleccionado();
+int id_salon = DatosUsuario.getIdSalonSeleccionado();
 LocalDate fecha = LocalDate.now();
 LocalTime hora = LocalTime.now();
 String numero = jTextField1.getText();
 int numero_personas = Integer.parseInt(numero);
 String observaciones = (String) jComboBox1.getSelectedItem();
 try {
-    reserva.crearReserva(new Reserva(1, id_cliente, id_restaurante, fecha, hora, numero_personas, observaciones));
+    reserva.crearReserva(new Reserva(0, id_cliente, id_salon, fecha, hora, numero_personas, observaciones));
     
     JOptionPane.showMessageDialog(null, "Se ha generado su reserva", "Reserva Exitosa", JOptionPane.INFORMATION_MESSAGE);
 } catch (SQLException ex) {
@@ -205,8 +201,8 @@ try {
     }//GEN-LAST:event_botonContinuarActionPerformed
 
     private void botonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCancelarActionPerformed
-        Salones restaurante = new Salones();
-        restaurante.setVisible(true);
+        Salones salon = new Salones();
+        salon.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_botonCancelarActionPerformed
 

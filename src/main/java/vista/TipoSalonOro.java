@@ -21,10 +21,6 @@ import javax.swing.table.TableModel;
 import modelo.Crud;
 import modelo.TipoSalon;
 
-/**
- *
- * @author LENOVO
- */
 public class TipoSalonOro extends javax.swing.JFrame {
 private static TipoSalonOro instancia; 
     public static synchronized TipoSalonOro getInstancia() {
@@ -180,17 +176,17 @@ private static TipoSalonOro instancia;
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
        Crud crud = new Crud();
-       int idRestaurante = DatosUsuario.getIdSalonSeleccionado();
-Command menuMeriendasCommand = new TipoSalonOroCommand(idRestaurante,"TipoSalon Merienda", crud);
-List<TipoSalon> menuMeriendas = menuMeriendasCommand.execute();
+       int idSalon = DatosUsuario.getIdSalonSeleccionado();
+Command salonCommand = new TipoSalonOroCommand(idSalon,"Tipo Salon Oro", crud);
+List<TipoSalon> salon = salonCommand.execute();
 DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 model.setRowCount(0);
 
-for (TipoSalon menu : menuMeriendas) { 
+for (TipoSalon salon1 : salon) {
     Object[] rowData = {
-        menu.getNombre(),
-        menu.getDescripcion(),
-        menu.getPrecio()
+        salon1.getNombre(),
+        salon1.getDescripcion(),
+        salon1.getPrecio()
     };
     model.addRow(rowData);
 }
@@ -209,10 +205,10 @@ public JLabel getTotalLabel() {
     public void mouseClicked(MouseEvent e) {
         int selectedRow = jTable1.getSelectedRow();
         if (selectedRow != -1) {
-            String nombreMenu = (String) jTable1.getValueAt(selectedRow, 0);
+            String nombreSalon = (String) jTable1.getValueAt(selectedRow, 0);
             double precioSeleccionado = (double) jTable1.getValueAt(selectedRow, 2);
             
-            DatosUsuario.agregarTipoSalonSeleccionado(nombreMenu, precioSeleccionado);
+            DatosUsuario.agregarTipoSalonSeleccionado(nombreSalon, precioSeleccionado);
             DatosUsuario.agregarPrecioSeleccionado(precioSeleccionado); 
             DatosUsuario.actualizarTotalLabel();
         }

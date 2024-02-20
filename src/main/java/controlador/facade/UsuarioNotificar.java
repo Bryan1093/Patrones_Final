@@ -14,13 +14,9 @@ import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import modelo.Cliente;
 
-/**
- *
- * @author kevin
- */
 //Notificamos al usuario en su correo electronico (existente) como se a procesado su actualizacion de usuario:
 public class UsuarioNotificar {
-    private static String emailFrom = "gustoreserve@gmail.com";
+    private static String emailFrom = "losangeleseventos@gmail.com";
     private static String passwordFrom = "itosfyzjdrxbmyuo";
     private String emailTo;
     private String  subject;

@@ -20,10 +20,6 @@ import javax.swing.table.TableModel;
 import modelo.Crud;
 import modelo.TipoSalon;
 
-/**
- *
- * @author LENOVO
- */
 public class TipoSalonGlapagos extends javax.swing.JFrame {
 private static TipoSalonGlapagos instancia; 
     public static synchronized TipoSalonGlapagos getInstancia() {
@@ -33,7 +29,7 @@ private static TipoSalonGlapagos instancia;
         return instancia;
     }
     /**
-     * Creates new form TipoSalonCuenca
+     * Creates new form TipoSalonGalapagos
      */
     public TipoSalonGlapagos() {
         initComponents();
@@ -182,16 +178,16 @@ private static TipoSalonGlapagos instancia;
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
        Crud crud = new Crud();
        int idSalon = DatosUsuario.getIdSalonSeleccionado();
-Command menuAlmuerzoCommand = new TipoSalonGlapagosCommand(idSalon,"TipoSalon Almuerzo", crud);
-List<TipoSalon> menuAlmuerzos = menuAlmuerzoCommand.execute();
+Command salonCommand = new TipoSalonGlapagosCommand(idSalon,"Tipo Salon Galapagos", crud);
+List<TipoSalon> salonG = salonCommand.execute();
 DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 model.setRowCount(0);
 
-for (TipoSalon menu : menuAlmuerzos) { 
+for (TipoSalon salon : salonG) {
     Object[] rowData = {
-        menu.getNombre(),
-        menu.getDescripcion(),
-        menu.getPrecio()
+        salon.getNombre(),
+        salon.getDescripcion(),
+        salon.getPrecio()
     };
     model.addRow(rowData);
 }
@@ -210,10 +206,10 @@ public JLabel getTotalLabel() {
     public void mouseClicked(MouseEvent e) {
         int selectedRow = jTable1.getSelectedRow();
         if (selectedRow != -1) {
-            String nombreMenu = (String) jTable1.getValueAt(selectedRow, 0);
+            String nombreSalon = (String) jTable1.getValueAt(selectedRow, 0);
             double precioSeleccionado = (double) jTable1.getValueAt(selectedRow, 2);
             
-            DatosUsuario.agregarTipoSalonSeleccionado(nombreMenu, precioSeleccionado);
+            DatosUsuario.agregarTipoSalonSeleccionado(nombreSalon, precioSeleccionado);
             DatosUsuario.agregarPrecioSeleccionado(precioSeleccionado); 
             DatosUsuario.actualizarTotalLabel();
         }

@@ -4,11 +4,6 @@
  */
 package controlador.Strategy;
 
-/**
- *
- * @author LENOVO
- */
-//Si el usuario lo desea puede obtener un precio sin su descuento apropiado:
 public class SinDescuentoStrategy implements PrecioStrategy {
     @Override
     public double calcularPrecio(double precioBase) {

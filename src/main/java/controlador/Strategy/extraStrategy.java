@@ -4,16 +4,11 @@
  */
 package controlador.Strategy;
 
-/**
- *
- * @author LENOVO
- */
-//Aplicamos una estrategia para la seleccion determinada de los TipoSalones con el precio Base y su Strategy:
-public class MenuStrategy {
+public class extraStrategy {
     private double precioBase;
     private PrecioStrategy precioStrategy;
 
-    public MenuStrategy(double precioBase, PrecioStrategy precioStrategy) {
+    public extraStrategy(double precioBase, PrecioStrategy precioStrategy) {
         this.precioBase = precioBase;
         this.precioStrategy = precioStrategy;
     }

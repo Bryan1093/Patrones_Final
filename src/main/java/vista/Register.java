@@ -7,10 +7,6 @@ package vista;
 import controlador.AuxiliarDatos.DatosUsuario;
 import controlador.proxy.ProxyUsuario;
 
-/**
- *
- * @author Joel
- */
 public class Register extends javax.swing.JFrame {
 
     /**

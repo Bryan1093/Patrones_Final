@@ -4,10 +4,6 @@
  */
 package modelo;
 
-/**
- *
- * @author LENOVO
- */
 public class TipoSalon {
     private int idTipoSalon;
     private int idSalon;
@@ -77,7 +73,4 @@ public class TipoSalon {
     public String toString() {
         return "TipoSalon[ " + "Id: " + idTipoSalon + ", ID Salon: " + idSalon + ", Nombre: " + nombre + ", Descripcion: " + descripcion + ", Precio: " + precio + ", Mas informacion: " + otraInformacion + " ]";
     }
-    
-    
-    
 }

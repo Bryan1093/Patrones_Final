@@ -13,14 +13,10 @@ import javax.swing.table.DefaultTableModel;
 import modelo.Crud;
 import modelo.Espacio;
 
-/**
- *
- * @author LENOVO
- */
 public class Espacios extends javax.swing.JFrame {
 
     /**
-     * Creates new form Mesas
+     * Creates new form Espacios
      */
     public Espacios() {
         initComponents();
@@ -186,20 +182,20 @@ public class Espacios extends javax.swing.JFrame {
         DefaultTableModel miTableModel = (DefaultTableModel) jTable2.getModel();
         miTableModel.setRowCount(0); 
 
-        List<Espacio> listaMesas = null;
+        List<Espacio> listaEspacio = null;
         try {
             Crud mostrar = new Crud();
-            listaMesas = mostrar.obtenerEspacios(estado,id_salon);
+            listaEspacio = mostrar.obtenerEspacios(estado,id_salon);
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        for (Espacio mesa : listaMesas) {
+        for (Espacio espacio : listaEspacio) {
             miTableModel.addRow(new Object[]{
-                mesa.getIdEspacio(),
-                mesa.getIdSalon(),
-                mesa.getCapacidad(),
-                mesa.getEstado()
+                espacio.getIdEspacio(),
+                espacio.getIdSalon(),
+                espacio.getCapacidad(),
+                espacio.getEstado()
             });
         }
 

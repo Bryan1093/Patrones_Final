@@ -4,11 +4,6 @@
  */
 package controlador.Observer;
 
-/**
- *
- * @author Joel
- * 
- */
 import java.util.ArrayList;
 import java.util.List;
 //Notificamos sobre los cambios en nuestro estado del pedido desarrollado:

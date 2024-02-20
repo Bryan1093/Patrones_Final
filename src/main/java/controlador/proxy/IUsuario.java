@@ -1,9 +1,5 @@
 package controlador.proxy;
 
-/**
- *
- * @author LENOVO
- */
 //Desplegamos las opciones de registro, inciio de sesion y cerrar sesion:
 public interface IUsuario {
 

@@ -4,10 +4,6 @@
  */
 package modelo;
 
-/**
- *
- * @author LENOVO
- */
 public class Salon {
     private int idSalon;
     private String nombreSalon;

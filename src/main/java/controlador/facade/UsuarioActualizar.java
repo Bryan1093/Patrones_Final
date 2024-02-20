@@ -9,11 +9,6 @@ import javax.swing.JOptionPane;
 import modelo.Cliente;
 import modelo.Crud;
 
-/**
- *
- * @author kevin
- */
-//Desarrollamos la personalizacion del usuario y lo notificamos a su correo:
 public class UsuarioActualizar {
     
     public void actualizarCLiente(String nombre, String correo, String telefono, String contrasenia){

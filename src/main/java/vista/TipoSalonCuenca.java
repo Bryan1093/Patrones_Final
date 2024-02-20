@@ -18,10 +18,7 @@ import javax.swing.table.TableModel;
 import modelo.Crud;
 import modelo.TipoSalon;
 import javax.swing.JLabel;
-/**
- *
- * @author LENOVO
- */
+
 public class TipoSalonCuenca extends javax.swing.JFrame {
     
     
@@ -187,16 +184,16 @@ public class TipoSalonCuenca extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
        Crud crud = new Crud();
        int idSalon = DatosUsuario.getIdSalonSeleccionado();
-Command menuDesayunoCommand = new TipoSalonCuencaCommand(idSalon,"TipoSalon Desayuno", crud);
-List<TipoSalon> menuDesayuno = menuDesayunoCommand.execute();
+Command cuencaCommand = new TipoSalonCuencaCommand(idSalon,"Tipo Salon Cuenca", crud);
+List<TipoSalon> cuenca = cuencaCommand.execute();
 DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
 model.setRowCount(0);
 
-for (TipoSalon menu : menuDesayuno) { 
+for (TipoSalon salon : cuenca) {
     Object[] rowData = {
-        menu.getNombre(),
-        menu.getDescripcion(),
-        menu.getPrecio()
+        salon.getNombre(),
+        salon.getDescripcion(),
+        salon.getPrecio()
     };
     model.addRow(rowData);
 }
@@ -215,10 +212,10 @@ public JLabel getTotalLabel() {
     public void mouseClicked(MouseEvent e) {
         int selectedRow = jTable1.getSelectedRow();
         if (selectedRow != -1) {
-            String nombreMenu = (String) jTable1.getValueAt(selectedRow, 0);
+            String nombreSalon = (String) jTable1.getValueAt(selectedRow, 0);
             double precioSeleccionado = (double) jTable1.getValueAt(selectedRow, 2);
             
-            DatosUsuario.agregarTipoSalonSeleccionado(nombreMenu, precioSeleccionado);
+            DatosUsuario.agregarTipoSalonSeleccionado(nombreSalon, precioSeleccionado);
             DatosUsuario.agregarPrecioSeleccionado(precioSeleccionado); 
             DatosUsuario.actualizarTotalLabel();
         }

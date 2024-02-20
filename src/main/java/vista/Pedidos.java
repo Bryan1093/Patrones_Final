@@ -17,10 +17,6 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import modelo.Crud;
 import modelo.Pedido;
-/**
- *
- * @author LENOVO
- */
 public class Pedidos extends javax.swing.JFrame {
 private EstadoPedido estadoPedido = new EstadoPedido();
 

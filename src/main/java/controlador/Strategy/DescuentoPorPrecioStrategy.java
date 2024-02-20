@@ -7,12 +7,6 @@ package controlador.Strategy;
 import controlador.AuxiliarDatos.DatosUsuario;
 import java.util.HashMap;
 import java.util.Map;
-
-/**
- *
- * @author LENOVO
- */
-//Descuento del gran precio de descuento (Acumulamos cuanto consume nuestro Usuario):
 public class DescuentoPorPrecioStrategy implements PrecioStrategy {
     private Map<Double, Double> descuentosPorMonto = new HashMap<>();
 

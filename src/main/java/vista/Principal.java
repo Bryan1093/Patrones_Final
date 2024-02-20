@@ -6,10 +6,6 @@ package vista;
 
 import controlador.proxy.ProxyUsuario;
 
-/**
- *
- * @author LENOVO
- */
 public class Principal extends javax.swing.JFrame {
 
     /**
@@ -216,8 +212,8 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Salones restaurante = new Salones();
-        restaurante.setVisible(true);
+        Salones salon = new Salones();
+        salon.setVisible(true);
         this.setVisible(false);
      
     }//GEN-LAST:event_jButton7ActionPerformed

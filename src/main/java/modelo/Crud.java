@@ -4,11 +4,6 @@
  */
 package modelo;
 
-/**
- *
- * @author LENOVO
- */
-
 import controlador.AuxiliarDatos.DatosUsuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

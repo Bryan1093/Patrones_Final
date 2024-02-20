@@ -7,10 +7,6 @@ package modelo;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-/**
- *
- * @author LENOVO
- */
 public class Pedido {
     private int idPedido;
     private int idCliente;

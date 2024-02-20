@@ -4,11 +4,6 @@
  */
 package controlador.Strategy;
 
-/**
- *
- * @author LENOVO
- */
-//Descuento Estudiantil:
 public class DescuentoQuinceStrategy implements PrecioStrategy {
     @Override
     public double calcularPrecio(double precioBase) {

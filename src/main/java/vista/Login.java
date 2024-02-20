@@ -8,10 +8,6 @@ import java.awt.Color;
 import controlador.proxy.ProxyUsuario;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Joel
- */
 public class Login extends javax.swing.JFrame {
 
     /**

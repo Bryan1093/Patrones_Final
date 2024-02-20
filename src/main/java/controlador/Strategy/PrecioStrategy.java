@@ -4,11 +4,6 @@
  */
 package controlador.Strategy;
 
-/**
- *
- * @author LENOVO
- */
-//Funcionalidad del calcular nuestro precio:
 public interface PrecioStrategy {
     double calcularPrecio(double precioBase);
 }
